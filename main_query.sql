@@ -1,5 +1,5 @@
 -- Question 1: Create person table
-CREATE TABLE PERSON (
+CREATE TABLE person (
 	id SERIAL PRIMARY KEY,
 	first_name VARCHAR (50) NULL,
 	last_name VARCHAR (50) NULL,
@@ -7,7 +7,7 @@ CREATE TABLE PERSON (
 	gender VARCHAR (6) NULL,
 	salary NUMERIC CHECK(salary > 0)
 );
-ALTER TABLE PERSON
+ALTER TABLE person
     OWNER to postgres;
 
 -- Question 2: Insert 2 records into person table
